@@ -25,7 +25,7 @@ public class PhoneTests {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"+37011111111", "+37111111111", "+48111111111"})
+    @ValueSource(strings = {"+37011111111", "+37111111111", "+48111111111", "800000000"})
     void TestCorrectPhone(String phone) {
         assertTrue(phoneValidator.isPhoneValid(phone, countryList));
     }
