@@ -1,5 +1,7 @@
 package MyUnitTests;
 
+import lt.vu.biblioteka.model.PhoneRules;
+import lt.vu.biblioteka.validators.PhoneValidator;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.junit.jupiter.api.Test;
@@ -107,7 +109,7 @@ public class PhoneValidator_Tests {
     }
 
     @Test
-    public void testRulesAddition2() {
+    public void testRulesAddition3() {
 
         PhoneValidator phoneValidator = new PhoneValidator();
         PhoneRules phoneRules = new PhoneRules("Iceland", 11, "+354");

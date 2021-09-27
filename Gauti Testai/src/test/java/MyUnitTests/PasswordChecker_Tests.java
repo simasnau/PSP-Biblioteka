@@ -1,5 +1,6 @@
 package MyUnitTests;
 
+import lt.vu.biblioteka.validators.PasswordChecker;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 

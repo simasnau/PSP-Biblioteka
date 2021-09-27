@@ -1,9 +1,9 @@
-package MyUnitTests;
+package lt.vu.biblioteka.model;
 
 public class PhoneRules {
 
-    PhoneRules() {};
-    PhoneRules(String country, int lengthOfPhoneNumber, String prefix) {
+    public PhoneRules() {};
+    public PhoneRules(String country, int lengthOfPhoneNumber, String prefix) {
         this.country = country;
         this.lengthOfPhoneNumber = lengthOfPhoneNumber;
         this.prefix = prefix;
