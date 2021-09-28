@@ -2,7 +2,7 @@ package lt.vu.biblioteka.model;
 
 public class PhoneRules {
 
-    public PhoneRules() {};
+    public PhoneRules() {}
     public PhoneRules(String country, int lengthOfPhoneNumber, String prefix) {
         this.country = country;
         this.lengthOfPhoneNumber = lengthOfPhoneNumber;
@@ -36,4 +36,12 @@ public class PhoneRules {
     private String country;
     private int lengthOfPhoneNumber;
     private String prefix;
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof PhoneRules) {
+            return country.equals(((PhoneRules) obj).getCountry()) && lengthOfPhoneNumber == ((PhoneRules) obj).getLengthOfPhoneNumber() && prefix.equals(((PhoneRules) obj).getPrefix());
+        }
+        return super.equals(obj);
+    }
 }

@@ -25,7 +25,7 @@ public class PhoneValidator_Tests {
 
     @ParameterizedTest
     @ValueSource(strings = {
-            "+37069935951",
+            "+3706993595",
             "",
             "Justiniskiu 7"
     })
