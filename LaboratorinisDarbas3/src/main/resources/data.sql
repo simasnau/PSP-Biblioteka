@@ -1,0 +1,1 @@
+INSERT INTO user (vardas, pavarde, TELEFONO_NUMERIS, email, adresas, slaptazodis) VALUES ('ABCD', 'AAAAA', '+37068899999', 'pastas@gmail.com', 'Vilnius', 'Pass1234!#'  );

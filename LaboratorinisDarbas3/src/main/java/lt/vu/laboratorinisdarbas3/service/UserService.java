@@ -38,12 +38,12 @@ public class UserService {
         return userOptional.get();
     }
 
-    public User addUser(User user) throws Exception {
+    public User createUser(User user) throws Exception {
         if (user == null) {
             throw new Exception("User is null");
         }
 
-        if (isUserNotValid(user)) {
+        if (userNotValid(user)) {
             throw new Exception();
         }
 
@@ -54,7 +54,7 @@ public class UserService {
         if (user == null || user.getId() == null) {
             throw new Exception("User id cant be null");
         }
-        if (isUserNotValid(user)) {
+        if (userNotValid(user)) {
             throw new Exception(USER_NOT_VALID_MSG);
         }
         if (!userRepository.existsById(user.getId())) {
@@ -68,7 +68,7 @@ public class UserService {
         userRepository.deleteById(userId);
     }
 
-    private boolean isUserNotValid(User userInfo) {
+    private boolean userNotValid(User userInfo) {
         List<Character> specialCharacters = new ArrayList<>();
         specialCharacters.add('?');
         specialCharacters.add('_');
